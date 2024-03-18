@@ -18,6 +18,21 @@ const connect = function () {
   conn.on("connect", () => {
     conn.write("Name: RMS");
     // console.log("Successfully connected to game server");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 1000);
+
+    // setInterval(() => {
+    //   conn.write("Move: left");
+    // }, 1050);
+
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 1100);
+  
+    
+
+
   });
 
   return conn;
