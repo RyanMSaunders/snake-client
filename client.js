@@ -29,11 +29,11 @@ const connect = function () {
     // setInterval(() => {
     //   conn.write("Move: up");
     // }, 1100);
-  
-    
-
-
   });
+
+  // setup interface to handle user input from stdin
+
+
 
   return conn;
 };
