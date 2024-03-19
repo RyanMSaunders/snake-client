@@ -30,23 +30,17 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write("Move: right");
   }
+  if (key === 'g') {
+    connection.write("Say: Snake n' Bake");
+  }
+  if (key === 'e') {
+    connection.write("Say: keep on slitherin'");
+  }
 
-  
-  // setInterval(() => {
-  //     conn.write("Move: up");
-  //   }, 1000);
+  if (key === 'f') {
+    connection.write("Say: where are my legs'");
+  }
 
-  //   setInterval(() => {
-  //     conn.write("Move: left");
-  //   }, 1050);
-
-  //   setInterval(() => {
-  //     conn.write("Move: up");
-  //   }, 1100);
-
-  //   conn.on("data", (data) => {
-  //     console.log("Server says: ", data);
-  //   });
 };
 
 module.exports = { setupInput };
