@@ -2,7 +2,7 @@
 // Stores the active TCP connection object.
 let connection;
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -13,33 +13,35 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-const handleUserInput = function (key) {
-  // \u0003 maps to ctrl+c input
-  if (key === '\u0003') {
-    process.exit();
-  }
-  if (key === 'w') {
-    connection.write("Move: up");
-  }
-  if (key === 'a') {
-    connection.write("Move: left");
-  }
-  if (key === 's') {
-    connection.write("Move: down");
-  }
-  if (key === 'd') {
-    connection.write("Move: right");
-  }
-  if (key === 'g') {
-    connection.write("Say: Snake n' Bake");
-  }
-  if (key === 'e') {
-    connection.write("Say: keep on slitherin'");
-  }
+const handleUserInput = function(key) {
 
-  if (key === 'f') {
+switch (key) {
+  // \u0003 maps to ctrl+c input
+  case '\u0003':
+    process.exit();
+    break;
+  case 'w':
+    connection.write("Move: up");
+    break;
+  case 'a':
+    connection.write("Move: left");
+    break;
+  case 's':
+    connection.write("Move: down");
+    break;
+  case 'd':
+    connection.write("Move: right");
+    break;
+  case 'g':
+    connection.write("Say: Snake n' Bake");
+    break;
+  case 'e':
+    connection.write("Say: keep on slitherin'");
+    break;
+  case 'f':
     connection.write("Say: where are my legs'");
-  }
+    break;
+}
 
 };
 
