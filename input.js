@@ -16,7 +16,6 @@ const setupInput = function(conn) {
 const handleUserInput = function(key) {
 
 switch (key) {
-  // \u0003 maps to ctrl+c input
   case '\u0003':
     process.exit();
     break;
