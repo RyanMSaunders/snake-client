@@ -17,8 +17,8 @@ npm run play
 
 ## Final Product
 
-!["Snake game interface"](./assets/snakeInterface.png)
-!["Running snake-client in the terminal"](./assets/connectingToServer.png)
+!["Snake game interface"](snake-client/assets/snakeInterface.png)
+!["Running snake-client in the terminal"](snake-client/assets/connectingToServer.png)
 
 
 
